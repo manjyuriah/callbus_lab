@@ -1,0 +1,72 @@
+.card-inner{
+    padding: 4px;
+    width: 308px;
+    margin-top: 42px;
+    cursor: pointer;
+    text-decoration: none;
+    .profile{
+        height: 32px;
+        position: relative;
+        font-size: 12px;
+        display: flex;
+        margin-bottom: 19px;
+        .profile-bg{
+            width: 32px;
+            height: 32px;
+            background-color: #FFD784;
+            padding: 6px;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        .inform{
+            text-align: start;
+            margin-left: 8px;
+            .nick-name{
+                font-weight: 700;
+            }
+            .condition{
+                color: #B4B4B4;
+            }
+        }
+    }
+    .post{
+        .post-title{
+            height: 21px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 6px;
+            text-align: start;
+        }
+        .post-content{
+            height: 44px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #7A7A7A;
+            margin-bottom: 17px;
+            text-align: start;
+        }
+        .post-img{
+            width: 308px;
+            height: 180px;
+            border:1px solid pink;
+            margin-bottom: 15px;
+        }
+        .post-state{
+            display: flex;
+            color: #7A7A7A;
+            height: 16px;
+            & li{
+                margin-right: 18px;
+                font-size: 12px;
+                line-height: 16px;
+                box-sizing: border-box;
+                & img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

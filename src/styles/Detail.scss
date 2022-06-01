@@ -1,0 +1,87 @@
+.detail-inner{
+    box-sizing: border-box;
+    width: 308px;
+    .go-back{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color:  #B4B4B4;
+        padding: 21px;
+        cursor: pointer;
+    }
+    .back{
+        margin-right: 11px;
+    }
+    .profile{
+        height: 32px;
+        position: relative;
+        font-size: 12px;
+        display: flex;
+        margin-bottom: 22px;
+        padding-left: 25px;
+        .profile-bg{
+            width: 32px;
+            height: 32px;
+            background-color: #FFD784;
+            padding: 6px;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        .inform{
+            text-align: start;
+            margin-left: 8px;
+            .nick-name{
+                font-weight: 700;
+            }
+            .condition{
+                color: #B4B4B4;
+            }
+        }
+    }
+    .post{
+        .post-title{
+            height: 21px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            margin-bottom: 8px;
+            text-align: start;
+            padding-left: 25px;
+        }
+        .post-content{
+            height: 44px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #7A7A7A;
+            margin-bottom: 15px;
+            text-align: start;
+            padding-left: 25px;
+        }
+        .post-img{
+            width: 360px;
+            height: 288px;
+            border:1px solid pink;
+            margin-bottom: 15px;
+        }
+        .post-state{
+            display: flex;
+            font-weight: 500;
+            font-size: 12px;
+            padding-left: 25px;
+            .thumb-box,.talk-box{
+                height: 32px;
+                padding: 9px;
+                box-sizing: border-box;
+                background: #F8F8F8;
+                border-radius: 6px;
+                margin-right: 10px;
+            }
+            & img{
+                width: 14px;
+                height: 14px;
+                margin-right: 7px;
+            }
+        }
+        
+    }
+}
