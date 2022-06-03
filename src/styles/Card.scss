@@ -4,7 +4,6 @@
     .card{
         background-color: #fff;
         margin-bottom: 6px;
-        cursor: pointer;
         padding: 26px;
         box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.4);
     }
@@ -21,6 +20,10 @@
             padding: 6px;
             border-radius: 50%;
             box-sizing: border-box;
+            .profileImg{
+                width: 20px;
+                height: 20px;
+            }
         }
         .inform{
             text-align: start;
@@ -35,6 +38,7 @@
         }
     }
     .post{
+        cursor: pointer;
         .post-title{
             font-weight: 700;
             font-size: 16px;

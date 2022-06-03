@@ -1,11 +1,13 @@
 import React from 'react';
 import '../styles/Detail.scss';
+import { useNavigate } from 'react-router-dom';
 
-function Post({history}){
+function Post(){
+    const navigate = useNavigate();
     return(
         <div>
             <div className="detail-inner">
-                <div className="go-back" onClick={()=>{history.goBack();}}>
+                <div className="go-back" onClick={() => navigate(-1)} >
                     <img className="back" alt="back" src={ require('../imgs/back.png') } />
                     글 목록으로
                 </div>

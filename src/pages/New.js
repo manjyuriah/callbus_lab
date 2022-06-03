@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/Write.scss';
+import { useNavigate } from 'react-router-dom';
 
-function New({history}){
+function New(){
+    const navigate = useNavigate();
     return(
         <div>
             <div className="write-inner">
                 <div className="write-top">
-                    <img className="back" alt="back" src={ require('../imgs/back.png')} onClick={()=>{history.goBack();}}/>
-                    <div class="title">글쓰기</div>
+                    <img className="back" alt="back" src={ require('../imgs/back.png')} onClick={() => navigate(-1)}/>
+                    <div className="title">글쓰기</div>
                     <div className="submit">완료</div>
                 </div>
                 <div className="category">
