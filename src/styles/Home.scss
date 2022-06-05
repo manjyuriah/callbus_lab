@@ -1,3 +1,49 @@
+.inner{
+    background-color: #fff;
+    .title{
+        font-family: 'Noto Sans KR';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 34px;
+        text-align: start;
+        width: 360px;
+        padding-left: 30px;
+    }
+    .slider{
+        width: 360px;
+        overflow-x: scroll;
+        -ms-overflow-style:none; /* IE and Edge */
+        scrollbar-width:none; /* Firefox */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .category{
+        width: 650px;
+        display: flex;
+        justify-content: space-between;
+        color: #7A7A7A;
+        padding: 20px 22px 46px 22px;
+        .active{
+            background: #2C7FFF;
+            color: #fff;
+        }
+        & li{
+            padding: 0 16px;
+            height: 38px;
+            border: 1px solid #E8E8E8;
+            border-radius: 20px;
+            box-sizing: border-box;
+            line-height: 38px;
+            margin-right: 4px;
+            cursor: pointer;
+            & img{
+                margin-right: 3px;
+            }
+        }
+    }
+}
 .write-button{
     font-weight: 700;
     font-size: 16px;

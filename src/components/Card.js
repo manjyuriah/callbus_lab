@@ -5,7 +5,41 @@ import moment from 'moment';
 import 'moment/locale/ko';
 import {Link} from 'react-router-dom'
 
-function Card(){
+function Card(props){
+    let allList;
+    let newList;
+    let cate = props.category
+    if(cate===1){//카테고리 전체보기
+         allList=PostList.filter(function(filter,index,all){//새로운 배열에 filter걸기
+             return filter;
+         });
+    }else if(cate===2){//viewCount 100이상
+        for(let i=0; i<PostList.length; i++){
+            if(PostList[i].viewCount>=100){
+                console.log('인기글만 출력');
+                let found=PostList.findIndex((cate)=>{return PostList})
+            }
+        }
+        // newList=PostList.filter(function(filter,index,all){//새로운 배열에 filter걸기
+            //return filter
+            //let z=filter.categoryPk.indexOf(e);
+             //console.log(z);
+              //if(z!=-1){
+              //    return filter;
+              //}
+        // })
+    }else{
+        let found=PostList.findIndex((cate)=>{return cate})
+        console.log(found);
+        //newList=PostList.filter(function(filter,index,all){//새로운 배열에 filter걸기
+            //return filter
+            // let z=filter.categoryPk.indexOf(props.category);
+                  //console.log(z);
+                   //if(z!=-1){
+                   //    return filter;
+                   //}
+        //})
+    }
     //현재 날짜 및 시간
     function timeToday(value){
         const today = moment();
